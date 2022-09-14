@@ -27,14 +27,42 @@ class _FeedPageState extends State<FeedPage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.0,
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.menu,
-            color: Colors.black,
+        // leading: IconButton(
+        //   onPressed: () {},
+        //   icon: const Icon(
+        //     Icons.menu,
+        //     color: Colors.black,
+        //   ),
+        // ),
+        actions: const [
+          Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Icon(
+              Icons.menu,
+              color: Colors.black,
+            ),
           ),
+        ],
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          // mainAxisAlignment: MainAxisAlignment.start,
+          children: const [
+            Text(
+              'R. Acre, 1199',
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 14,
+              ),
+            ),
+            Text(
+              'Boa Vista, RR',
+              style: TextStyle(
+                color: Color.fromARGB(55, 0, 0, 0),
+                fontSize: 14,
+              ),
+            ),
+          ],
         ),
-        title: const Text('Pigz'),
       ),
       body: ValueListenableBuilder(
           valueListenable: controller,

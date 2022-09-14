@@ -16,85 +16,51 @@ class FeedTile extends StatelessWidget {
 
     return InkWell(
       onTap: () => Modular.to.pushNamed('/feed/detail', arguments: item),
-      child: Card(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12.0),
-        ),
+      child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 6.0),
         child: Column(
           children: [
-            Row(
+            Column(
               children: [
-                CircleAvatar(
-                    // backgroundImage: NetworkImage(item.photo),
-                    ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(8.0, 8.0, 0.0, 6.0),
-                  child: Text(
-                    item.name,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 16.0,
-                    ),
+                SizedBox(
+                  // width: 32.0,
+                  height: 32.0,
+                  child: Row(
+                    children: [Image.network(item.image)],
                   ),
                 ),
-                const Spacer(),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.more_vert_outlined,
-                    size: 16.0,
-                  ),
+                SizedBox(
+                  child: Row(),
                 ),
+                // Row(
+                //   children: [
+                //     SizedBox(
+                //       child: CircleAvatar(
+                //         backgroundImage: NetworkImage(item.image),
+                //         radius: 30.0,
+                //       ),
+                //     ),
+                //     Padding(
+                //       padding: const EdgeInsets.all(8.0),
+                //       child: Text(
+                //         item.name,
+                //         style: const TextStyle(
+                //           fontWeight: FontWeight.w400,
+                //           fontSize: 16.0,
+                //         ),
+                //       ),
+                //     ),
+                //     const Spacer(),
+                //     IconButton(
+                //       onPressed: () {},
+                //       icon: const Icon(
+                //         Icons.favorite_outline_sharp,
+                //         size: 20.0,
+                //       ),
+                //     ),
+                //   ],
+                // ),
               ],
-            ),
-            // FadeInImage.assetNetwork(
-            //   placeholder: 'assets/icons/loading.gif',
-            //   placeholderScale: 0.5,
-            //   placeholderFit: BoxFit.cover,
-            //   height: size.height * 0.25,
-            //   width: size.width * 0.9,
-            //   image: item.image,
-            //   fit: BoxFit.fill,
-            // ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0.0),
-              child: Row(
-                children: [
-                  Icon(Icons.add),
-                  // const ImageIcon(
-                  //   AssetImage("assets/icons/grey_icon_account.png"),
-                  //   color: Colors.black,
-                  //   size: 16.0,
-                  // ),
-                  const Text(' 111'),
-                  const Spacer(),
-                  Icon(Icons.add),
-                  // const ImageIcon(
-                  //   AssetImage("assets/icons/grey_icon_btn_comments.png"),
-                  //   color: Colors.black,
-                  //   size: 16.0,
-                  // ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 8.0),
-                    child: Text(
-                      item.name.toString(),
-                    ),
-                  ),
-                  const SizedBox(width: 8.0),
-                  Text(' ${item.name}')
-                ],
-              ),
-            ),
-            SizedBox(
-              width: size.width * 0.8,
-              child: Padding(
-                padding:
-                    const EdgeInsets.only(left: 6.0, top: 8.0, bottom: 8.0),
-                child: Text(
-                  item.name,
-                ),
-              ),
             ),
           ],
         ),

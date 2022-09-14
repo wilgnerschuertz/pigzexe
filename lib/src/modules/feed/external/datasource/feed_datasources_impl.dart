@@ -13,7 +13,7 @@ class FeedDatasourceImpl implements FeedDatasource {
   @override
   Future<List<FeedModel>> getFeeds() async {
     var response = await _dio.get(
-        'https://raw.githubusercontent.com/wilgnerschuertz/apiTESTE/main/data.json');
+        'https://raw.githubusercontent.com/wilgnerschuertz/pigzexe/main/lib/datas/data.json?token=GHSAT0AAAAAABYHFFAFUPL3NBELQDGWTJV6YZBGAUQ');
 
     if (response.statusCode == 200) {
       // return (response as List).map((e) => FeedModel.fromMap(e)).toList();

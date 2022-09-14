@@ -59,7 +59,7 @@ class _FeedDetailPageState extends State<FeedDetailPage> {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Row(
                   children: [
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 30,
                       // backgroundImage: NetworkImage(widget.feed.photo),
                     ),
