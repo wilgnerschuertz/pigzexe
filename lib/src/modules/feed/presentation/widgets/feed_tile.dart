@@ -23,65 +23,48 @@ class FeedTile extends StatelessWidget {
             Row(
               children: [
                 SizedBox(
-                  height: 32.0,
-                  child: Row(
-                    children: [Image.network(item.image)],
-                  ),
-                ),
-                SizedBox(
-                  child: Row(
-                    children: const [
-                      Text('Data'),
-                      Text('Data'),
-                      Text('Data'),
-                      Text('Data'),
-                    ],
-                  ),
-                ),
-                // Row(
-                //   children: [
-                //     SizedBox(
-                //       child: CircleAvatar(
-                //         backgroundImage: NetworkImage(item.image),
-                //         radius: 30.0,
-                //       ),
-                //     ),
-                //     Padding(
-                //       padding: const EdgeInsets.all(8.0),
-                //       child: Text(
-                //         item.name,
-                //         style: const TextStyle(
-                //           fontWeight: FontWeight.w400,
-                //           fontSize: 16.0,
-                //         ),
-                //       ),
-                //     ),
-                //     const Spacer(),
-                //     IconButton(
-                //       onPressed: () {},
-                //       icon: const Icon(
-                //         Icons.favorite_outline_sharp,
-                //         size: 20.0,
-                //       ),
-                //     ),
-                //   ],
-                // ),
-              ],
-            ),
-            Column(
-              children: [
-                SizedBox(
                   child: Row(
                     children: [
-                      Text('Data'),
-                      Text('Data'),
-                      Text('Data'),
-                      Text('Data'),
+                      SizedBox(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: CircleAvatar(
+                            backgroundImage: NetworkImage(item.image),
+                            radius: 24.0,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
+                Column(
+                  children: [
+                    // const SizedBox(width: 150.0),
+                    SizedBox(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(item.name),
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          '${item.range}km',
+                          style: TextStyle(
+                              color: Colors.grey.shade500, fontSize: 12),
+                        ),
+                        const SizedBox(width: 8.0),
+                        Text(
+                          item.status,
+                          style: TextStyle(
+                              color: Colors.grey.shade500, fontSize: 12),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),
