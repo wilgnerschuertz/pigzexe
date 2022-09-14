@@ -37,7 +37,7 @@
         "description" : "Pizzas",
         "range" : "6,43",
         "status" : "Aberto",
-        "image" : ""
+        "image" : "https://cdn.pigz.app/pigzapp/merchant/cascata.webp"
     },
     {
         "id" : "6",

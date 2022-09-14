@@ -18,19 +18,25 @@ class FeedTile extends StatelessWidget {
       onTap: () => Modular.to.pushNamed('/feed/detail', arguments: item),
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 6.0),
-        child: Column(
+        child: Row(
           children: [
-            Column(
+            Row(
               children: [
                 SizedBox(
-                  // width: 32.0,
                   height: 32.0,
                   child: Row(
                     children: [Image.network(item.image)],
                   ),
                 ),
                 SizedBox(
-                  child: Row(),
+                  child: Row(
+                    children: const [
+                      Text('Data'),
+                      Text('Data'),
+                      Text('Data'),
+                      Text('Data'),
+                    ],
+                  ),
                 ),
                 // Row(
                 //   children: [
@@ -62,6 +68,20 @@ class FeedTile extends StatelessWidget {
                 // ),
               ],
             ),
+            Column(
+              children: [
+                SizedBox(
+                  child: Row(
+                    children: [
+                      Text('Data'),
+                      Text('Data'),
+                      Text('Data'),
+                      Text('Data'),
+                    ],
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
