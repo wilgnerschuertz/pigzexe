@@ -3,7 +3,7 @@
         "id" : "1",
         "name" : "Nostra Pizzaria",
         "description" : "Pizzas",
-        "range" : "6,43",
+        "range" : "1,43",
         "status" : "Aberto",
         "image" : "https://cdn.pigz.app/pigzapp/merchant/01FNYANPX98D2KD0SNXQPVM2DR.webp"
     },
@@ -19,7 +19,7 @@
         "id" : "5",
         "name" : "Nostra Pizzaria",
         "description" : "Pizzas",
-        "range" : "6,43",
+        "range" : "1,43",
         "status" : "Aberto",
         "image" : "https://cdn.pigz.app/pigzapp/merchant/cascata.webp"
     },
@@ -27,7 +27,7 @@
         "id" : "6",
         "name" : "Kocar Brasil",
         "description" : "Restaurantes",
-        "range" : "1,4",
+        "range" : "1,43",
         "status" : "Aberto",
         "image" : "https://cdn.pigz.app/pigzapp/merchant/high/01G8KXE2XEJQ7FJ08JAB8XSCT9.jpg"
     },

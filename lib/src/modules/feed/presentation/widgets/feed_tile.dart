@@ -39,27 +39,9 @@ class FeedTile extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    // const SizedBox(width: 150.0),
-                    SizedBox(
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(item.name),
-                      ),
-                    ),
+                    Text(item.name),
                     Row(
-                      children: [
-                        Text(
-                          '${item.range}km',
-                          style: TextStyle(
-                              color: Colors.grey.shade500, fontSize: 12),
-                        ),
-                        const SizedBox(width: 8.0),
-                        Text(
-                          item.status,
-                          style: TextStyle(
-                              color: Colors.grey.shade500, fontSize: 12),
-                        ),
-                      ],
+                      children: [Text(item.range), Text(item.status)],
                     ),
                   ],
                 ),
