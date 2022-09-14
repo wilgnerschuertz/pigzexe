@@ -1,0 +1,59 @@
+[
+    {
+        "id" : "1",
+        "name" : "Nostra Pizzaria",
+        "description" : "Pizzas",
+        "range" : "6,43",
+        "status" : "Aberto",
+        "image" : "https://cdn.pigz.app/pigzapp/merchant/01FNYANPX98D2KD0SNXQPVM2DR.webp"
+    },
+    {
+        "id" : "2",
+        "name" : "Loko Sabor",
+        "description" : "Açaís e Sorvetes",
+        "range" : "1,81",
+        "status" : "Aberto",
+        "image" : "https://cdn.pigz.app/pigzapp/merchant/high/01GB8S16PFWPS1KHXF0S0TBK0E.webp"
+    },
+    {
+        "id" : "3",
+        "name" : "Cascata Pizzaria",
+        "description" : "Pizzas",
+        "range" : "1,76",
+        "status" : "Aberto",
+        "image" : "https://cdn.pigz.app/pigzapp/merchant/cascata.webp"
+    },
+    {
+        "id" : "4",
+        "name" : "Recanto da Peixada",
+        "description" : "Restaurantes",
+        "range" : "1,27",
+        "status" : "Aberto",
+        "image" : "https://cdn.pigz.app/pigzapp/merchant/01G5EJEB0TZR5B2RH8ZF1DTNXC.webp"
+    },
+    {
+        "id" : "5",
+        "name" : "Nostra Pizzaria",
+        "description" : "Pizzas",
+        "range" : "6,43",
+        "status" : "Aberto",
+        "image" : ""
+    },
+    {
+        "id" : "6",
+        "name" : "Kocar Brasil",
+        "description" : "Restaurantes",
+        "range" : "1,4",
+        "status" : "Aberto",
+        "image" : "https://cdn.pigz.app/pigzapp/merchant/high/01G8KXE2XEJQ7FJ08JAB8XSCT9.jpg"
+    },
+    {
+        "id" : "7",
+        "name" : "Assados.com",
+        "description" : "Restaurantes",
+        "range" : "3,78",
+        "status" : "Aberto",
+        "image" : "https://cdn.pigz.app/pigzapp/merchant/assados-comresultadoresultado-614272b9ecdfe.webp"
+    }
+    
+]
