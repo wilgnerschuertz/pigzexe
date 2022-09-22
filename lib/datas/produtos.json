@@ -1,0 +1,49 @@
+[
+    {
+        "id" : "1",
+        "name" : "Tortinha Brownie"
+    },
+    {
+        "id" : "2",
+        "name" : "Pote Alpino"
+    },
+    {
+        "id" : "3",
+        "name" : "Pote Mini Bolo de Chocolate"
+    },
+    {
+        "id" : "4",
+        "name" : "Copo Delícia de Morango"
+    },
+    {
+        "id" : "5",
+        "name" : "Tartelette de Limão"
+    },
+    {
+        "id" : "6",
+        "name" : "Torta no Pote"
+    } ,
+    {
+        "id" : "7",
+        "name" : "Copo Brownie"
+    } ,
+    {
+        "id" : "8",
+        "name" : "Pote Red Velvet"
+    } ,
+    {
+        "id" : "9",
+        "name" : "Bombom de Morango"
+    } ,
+    {
+        "id" : "10",
+        "name" : "Brownie Misto"
+    } ,
+    {
+        "id" : "11",
+        "name" : "Cheesecake"
+    }  
+]
+
+
+

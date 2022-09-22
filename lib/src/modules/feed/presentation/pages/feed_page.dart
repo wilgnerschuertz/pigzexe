@@ -46,14 +46,8 @@ class _FeedPageState extends State<FeedPage> {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           // mainAxisAlignment: MainAxisAlignment.start,
-          children: const [
-            Text(
-              'R. Acre, 1199',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 14,
-              ),
-            ),
+          children: [
+            TextFormField(),
             Text(
               'Boa Vista, RR',
               style: TextStyle(
