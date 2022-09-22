@@ -16,34 +16,26 @@ class FeedTile extends StatelessWidget {
 
     return InkWell(
       onTap: () => Modular.to.pushNamed('/feed/detail', arguments: item),
-      child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 6.0),
-        child: Row(
+      child: SizedBox(
+        child: Column(
           children: [
             Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: CircleAvatar(
-                            backgroundImage: NetworkImage(item.image),
-                            radius: 24.0,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                Padding(
+                  padding:
+                      const EdgeInsets.only(left: 8.0, top: 8.0, right: 8.0),
+                  child: CircleAvatar(
+                      backgroundImage: NetworkImage(item.image), radius: 24.0),
                 ),
-                Column(
-                  children: [
-                    Text(item.name),
-                    Row(
-                      children: [Text(item.range), Text(item.status)],
-                    ),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 8.0),
+                  child: Text(item.name),
+                ),
+                const Spacer(),
+                const Padding(
+                  padding: EdgeInsets.only(right: 8.0),
+                  child: Icon(Icons.favorite_border),
                 ),
               ],
             ),
